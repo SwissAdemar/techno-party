@@ -17,11 +17,22 @@
     color: #fff;
     transition: .3s all;
     top: 20px;
+    left: 100px;
+    align-self: flex-start;
+}
+
+#play-btn{
+    position: absolute;
+    border: 1px solid #fff;
+    padding: 5px 25px;
+    color: #fff;
+    transition: .3s all;
+    top: 20px;
     left: 20px;
     align-self: flex-start;
 }
 
-#mute-btn:hover {
+#mute-btn:hover, #play-btn:hover {
     background: rgba(255, 255, 255, 0.3);
 }
 

@@ -1,9 +1,13 @@
-
 const audio = document.querySelector("audio");
-audio.volume = 0.1;
+audio.volume = 0.8;
+
+const playBtn = document.getElementById("play-btn");
 const muteBtn = document.getElementById("mute-btn");
+playBtn.addEventListener('click', () => {
+    audio.play();
+})
 muteBtn.addEventListener('click', () => {
-    audio.muted === true ? audio.muted = false : audio.muted = true;
+    audio.pause();
 })
 const items = document.querySelectorAll(".timer p");
 const countDownDate = new Date("Sep 2, 2023 08:00:00").getTime();
