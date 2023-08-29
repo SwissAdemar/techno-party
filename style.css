@@ -36,13 +36,7 @@
     background: rgba(255, 255, 255, 0.3);
 }
 
-#page-header{
-    color: #fff;
-    font-family: 'Handjet', cursive;
-    display: grid;
-    place-items: center;
-    
-}
+
 #left {
     position: absolute;
     height: 100vh;
@@ -80,10 +74,17 @@
     }
 }
 
+#page-header{
+    color: #fff;
+    font-family: 'Handjet', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #page-header h1 {
-    position: absolute;
-    top: 15vh;
+    /* position: absolute;
+    top: 15vh; */
     font-size: 64px;
     letter-spacing: 5px;
     text-shadow: 0 0 10px #e71260;
@@ -98,12 +99,19 @@
     align-items: center;
     justify-content: center;
     font-family: 'Handjet', cursive;
+    
 }
 
 .container {
     min-width: 1200px;
     min-height: 600px;
     display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    flex: 1 1 80%;
 }
 
 .timer {
@@ -172,6 +180,7 @@ ul li::marker {
     }
     #page-header h1{
         font-size: 34px;
+        
     }
     .container {
         min-width: 390px;
