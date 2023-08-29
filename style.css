@@ -174,7 +174,7 @@ ul li::marker {
 
 @media screen and (max-width: 600px){
     #left, #right {
-       max-width: 60vw;
+       max-width: 50vw;
        align-items: flex-end;
       
     }
