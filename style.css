@@ -174,7 +174,6 @@ ul li::marker {
     .container {
         min-width: 390px;
         min-height: 300px;
-        border: 1px solid white;
         gap: 1.5em;
     }
     .timer {
