@@ -82,8 +82,8 @@
 }
 
 #js-timer {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     background: #0e0106;
     color: #ffffff;
     display: flex;
@@ -164,6 +164,10 @@ ul li::marker {
 }
 
 @media screen and (max-width: 600px){
+    #js-timer {
+        align-items: flex-start;
+    }
+
     #left, #right {
        bottom: 0;
        width: 130px;
@@ -172,9 +176,11 @@ ul li::marker {
         font-size: 34px;
     }
     .container {
+        margin-top: 100px;
         min-width: 390px;
         min-height: 300px;
         gap: 1.5em;
+        
     }
     .timer {
         flex: 1 1 50%;
@@ -189,6 +195,7 @@ ul li::marker {
     }
     .schedule {
         flex: 1 1 50%;
+        
     }
     .schedule .content {
         width: 130px;
