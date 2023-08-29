@@ -39,25 +39,16 @@
 
 #left {
     position: absolute;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#left img{
-    width: 360px;
+    left: 0;
+    width: 200px;
     transform: rotate(90deg);
-    animation: image .3s infinite;
 }
 
 #right {
-    right: 0;
     position: absolute;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    right: 0;
+    width: 200px;
+    transform: rotate(90deg);
 }
 
 #right img {
@@ -174,16 +165,17 @@ ul li::marker {
 
 @media screen and (max-width: 600px){
     #left, #right {
-       max-width: 50vw;
-       align-items: flex-end;
-      
+       bottom: 0;
+       width: 130px;
     }
     #page-header h1{
         font-size: 34px;
-        
     }
     .container {
         min-width: 390px;
+        min-height: 300px;
+        border: 1px solid white;
+        gap: 1.5em;
     }
     .timer {
         flex: 1 1 50%;
@@ -194,6 +186,7 @@ ul li::marker {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-basis: 80px;
     }
     .schedule {
         flex: 1 1 50%;
