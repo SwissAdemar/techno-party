@@ -32,7 +32,9 @@ let counter = setInterval( () => {
 
     if(timeLeft < 0){
         clearInterval(counter);
-        
+        items.forEach(item => {
+            item.innerHTML = "00";
+        })
     }
 
 }, 1000);
